@@ -16,6 +16,7 @@ import users from '../Media/users.svg'
 import normie from "../Media/normie.png"
 import './Dashboard.css'
 import CurrencyGraph from './CurrencyGraph';
+import Piechart from './PieChart';
 
 const Dashboard = () => {
     const { logOut, user } = useUserAuth();
@@ -181,7 +182,11 @@ const Dashboard = () => {
                 <div className='line'>
                     <CurrencyGraph />
                 </div>
+                <div className='pie'>
+                    <Piechart />
+                </div>
             </div>
+            
         </div>
 
     </div>
